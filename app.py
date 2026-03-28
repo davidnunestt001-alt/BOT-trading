@@ -2,7 +2,6 @@
 from flask import Flask, request, jsonify
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
-import pandas as pd
 import numpy as np
 import threading
 import queue
