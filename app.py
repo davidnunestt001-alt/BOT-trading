@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
+import pandas as pd
 import numpy as np
 import threading
 import queue
@@ -327,11 +328,3 @@ def webhook():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-import threading
-
-def bot_loop():
-    print("🔥 BOT rodando...")
-    while True:
-        pass  # depois coloca lógica
-
-threading.Thread(target=bot_loop, daemon=True).start()
