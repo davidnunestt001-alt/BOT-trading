@@ -1,0 +1,4 @@
+flask
+python-binance
+python-dotenv
+gunicorn
